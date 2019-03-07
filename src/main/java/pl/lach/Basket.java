@@ -37,6 +37,7 @@ public class Basket {
         orderedItems.put(item, amount);
     }
 
+
     public void removeItemFromBracket(Item item) {
         orderedItems.remove(item);
     }
@@ -56,9 +57,11 @@ public class Basket {
         return totalCost;
     }
 
-    public void showContentOfBracket() {
+    public String showContentOfBracket() {
+        StringBuilder stringBuilder = new StringBuilder();
         for (Item item : orderedItems.keySet()) {
-            System.out.println("Product: " + item.getName() + " Price: " + item.getPrice() + " Amount: " + orderedItems.get(item));
+            stringBuilder.append("Product: " + item.getName() + " Price: " + item.getPrice() + " Amount: " + orderedItems.get(item) + "\n");
         }
+        return stringBuilder.toString();
     }
 }

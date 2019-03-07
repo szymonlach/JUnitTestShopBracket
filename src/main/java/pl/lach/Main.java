@@ -11,18 +11,19 @@ public class Main {
 
 
         Basket myBasket = new Basket();
-        myBasket.addItemToBracket(milk,2);
-        myBasket.addItemToBracket(appleJuice,3);
-        myBasket.addItemToBracket(bread,1);
-        myBasket.addItemToBracket(orange,6);
+        myBasket.addItemToBracket(milk, 2);
+        myBasket.addItemToBracket(appleJuice, 3);
+        myBasket.addItemToBracket(bread, 1);
+        myBasket.addItemToBracket(orange, 6);
 
         System.out.println(myBasket.showTotalCostOfBracket());
         myBasket.showContentOfBracket();
 
         myBasket.removeItemFromBracket(milk);
-        myBasket.removeItemFromBracket(orange,4);
+        myBasket.removeItemFromBracket(orange, 4);
         System.out.println(myBasket.showTotalCostOfBracket());
-        myBasket.showContentOfBracket();
+        System.out.println(myBasket.showContentOfBracket());
+
 
     }
 }
